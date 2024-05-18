@@ -7,9 +7,9 @@ def matrix_shape(matrix):
 	Returns a list of integers that represents the shape of the matrix.
 
 	"""
-	shape = []
-	while isinstance(matrix, list):
-		shape.append(len(matrix))
-		matrix = matrix[0]
-	return shape
+    shape = []
+    while isinstance(matrix, list):
+        shape.append(len(matrix))
+        matrix = matrix[0]
+    return shape
 
