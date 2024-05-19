@@ -2,9 +2,9 @@
 '''
     The Script has a function that returns the transpose of a 2D matrix.
 '''
+
+
 def matrix_transpose(matrix):
-
-
     '''
         Returns The transpose of a 2d matrix.
         matrix: The 2d matrix to be transposed.
