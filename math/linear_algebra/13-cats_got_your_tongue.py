@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 '''
-    This script contains a function that concatenates 2 matrices in a specific axis
+    This script concatenates 2 matrices in a specific axis
 '''
 
 
