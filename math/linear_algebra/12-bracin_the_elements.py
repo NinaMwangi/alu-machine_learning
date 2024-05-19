@@ -2,7 +2,7 @@
 
 
 '''
-    This script contains a function that performs element-wise addition, 
+    This script contains a function that performs element-wise addition,
     subtraction, multiplication, and division.
 '''
 
@@ -19,5 +19,4 @@ def np_elementwise(mat1, mat2):
     subtraction = mat1 - mat2
     multiplication = mat1 * mat2
     division = mat1 / mat2
-    
     return addition, subtraction, multiplication, division
