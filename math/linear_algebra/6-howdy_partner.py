@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-''' 
+'''
     This script contains a function that concatenates two arrays.
 '''
 
