@@ -3,6 +3,8 @@
 '''
     This script contains a function that transposes a matrix.
 '''
+
+
 def np_transpose(matrix):
     '''
         This function transposes a matrix.
