@@ -2,6 +2,8 @@
 '''
    This scrpt contains a function that multiplies 2 matrices.
 '''
+
+
 def mat_mul(mat1, mat2):
     '''
         Multiplies 2 matrices.
