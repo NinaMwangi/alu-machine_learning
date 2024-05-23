@@ -3,6 +3,7 @@
     This script calculates the determinant of a matrix.
 '''
 
+
 def determinant(matrix):
     '''
         The function that will calculate the determinant.
@@ -29,10 +30,11 @@ def determinant(matrix):
     det = 0
     for j in range(len(matrix[0])):
         if matrix[0]:
-            cofactor = matrix[0][j] * determinant([row[:j] + row[j+1:] \
+              cofactor = matrix[0][j] * determinant([row[:j] + row[j+1:]
                 for row in matrix[1:]])
             det += cofactor * (-1) ** j
     return det
+
 
 def cofactor(matrix):
     '''
@@ -72,6 +74,7 @@ def cofactor(matrix):
 
     return list_minor
 
+
 def adjugate(matrix):
     '''
     a function that calculates the adjugate
@@ -84,6 +87,7 @@ def adjugate(matrix):
             inner.append(adj[i][j])
         transpose.append(inner)
     return transpose
+
 
 def inverse(matrix):
     '''

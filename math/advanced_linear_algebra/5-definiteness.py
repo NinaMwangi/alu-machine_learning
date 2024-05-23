@@ -5,6 +5,7 @@ Calculates the definiteness of a matrix
 '''
 import numpy as np
 
+
 def definiteness(matrix):
     '''
         a function that calculates the definitiness of a matrix
