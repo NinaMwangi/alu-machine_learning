@@ -30,7 +30,7 @@ def determinant(matrix):
     det = 0
     for j in range(len(matrix[0])):
         if matrix[0]:
-              cofactor = matrix[0][j] * determinant([row[:j] + row[j+1:] \
+            cofactor = matrix[0][j] * determinant([row[:j] + row[j+1:] \
                 for row in matrix[1:]])
             det += cofactor * (-1) ** j
     return det
