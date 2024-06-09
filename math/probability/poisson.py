@@ -26,7 +26,7 @@ class Poisson:
                 raise ValueError("data must contain multiple values")
             self.lambtha = sum(data) / len(data)
 
-def pmf(self, k):
+    def pmf(self, k):
         """
         Probability Mass Function for poisson
         """
@@ -41,3 +41,16 @@ def pmf(self, k):
             x_factorial *= i
         pmf = e_mean * mean_k / x_factorial
         return pmf
+
+    def cdf(self, k):
+        """
+        Cumulative Distribution Function for poisson
+        """
+        if type(k) is not int:
+            k = int(k)
+        if k < 0:
+            return 0
+        cdf = 0
+        for i in range(k + 1):
+            cdf += Poisson.pmf(self, i)
+        return cdf
