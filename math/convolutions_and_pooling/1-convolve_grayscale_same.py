@@ -36,7 +36,7 @@ def convolve_grayscale_same(images, kernel):
     c_width = images.shape[2]
 
     pad_images = np.pad(images, ((0, 0), (padding_h, padding_h), (padding_w, padding_w)))
-    convolved = np.zeros(c_images, c_height, c_width)
+    convolved = np.zeros((c_images, c_height, c_width))
     for row in range(c_height):
         for col in range(c_width):
             ele_mul = pad_images[:, row:row + f_height, col:col + f_width] * kernel
