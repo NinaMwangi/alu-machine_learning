@@ -4,6 +4,7 @@
 '''
 import numpy as np
 
+
 def convolve_grayscale(images, kernel, padding='same', stride=(1, 1)):
     '''
     The function that convolves the grescale image.
