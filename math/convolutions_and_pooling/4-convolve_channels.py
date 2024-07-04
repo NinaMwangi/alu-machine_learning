@@ -6,6 +6,23 @@ import numpy as np
 
 
 def convolve_channels(images, kernel, padding='same', stride=(1, 1)):
+    '''
+    The function that convolves the grescale image.
+    images: the input images to be convolved.
+    kernel: the filter being applied to the images
+    m is the number of images
+    h is the height in pixels of the images
+    w is the width in pixels of the images
+    kh is the height of the kernel
+    kw is the width of the kernel
+    padding: is tuple  of (ph, pw)
+    ph is the padding for the height of the image
+    pw is the padding for the width of the image
+    stride is a tuple of (sh, sw)
+    sh is the stride for the height of the image
+    sw is the stride for the width of the image
+    Returns: a numpy.ndarray containing the convolved images
+    '''
     c_images, images_h, images_w, _ = images.shape
     f_height = kernel.shape[0]
     f_width = kernel.shape[1]
@@ -21,7 +38,6 @@ def convolve_channels(images, kernel, padding='same', stride=(1, 1)):
 
     c_height = (images.shape[1] + 2 * padding_h - f_height) // stride_h + 1
     c_width = (images.shape[2] + 2 * padding_w - f_width) // stride_w + 1
-    
     pad_images = np.pad(images, ((0, 0), (padding_h, padding_h), (padding_w,
                                                                   padding_w),
                                  (0, 0)))
