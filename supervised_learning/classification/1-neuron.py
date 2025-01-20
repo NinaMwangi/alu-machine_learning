@@ -31,7 +31,7 @@ class Neuron:
         :returns weight vector neuron
         """
         return self.__W
-    
+
     @property
     def b(self):
         """
@@ -39,7 +39,7 @@ class Neuron:
         returns bias for neuron
         """
         return self.__b
-    
+
     @property
     def A(self):
         """
