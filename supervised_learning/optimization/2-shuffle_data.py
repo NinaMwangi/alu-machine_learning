@@ -15,3 +15,4 @@ def shuffle_data(X, Y):
     permutation = np.random.permutation(X.shape[0])
     return X[permutation, :], Y[permutation, :]
 
+
