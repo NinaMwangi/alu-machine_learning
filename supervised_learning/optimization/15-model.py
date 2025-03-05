@@ -252,4 +252,5 @@ def model(Data_train, Data_valid, layers, activations, alpha=0.001,
             sess.run(tf.assign(global_step, global_step + 1))
 
         return saver.save(sess, save_path)
-
+    
+    
